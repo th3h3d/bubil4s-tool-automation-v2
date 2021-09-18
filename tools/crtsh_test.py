@@ -31,7 +31,7 @@ def process(source_code, root):
 
 
 @pytest.mark.recon
-@pytest.sub_passive
+@pytest.mark.sub_passive
 @pytest.mark.crtsh_test_get_crt_subdomain
 def test_get_crt_subdomain():
     """should return result of 'Get subs from crt'"""

@@ -24,7 +24,7 @@ class Logger:
             self.logger.warning(message)
         except Exception as e:
             # Manual logger for logging
-            self.ulogger.log_this("{} -> warning -> {}\n".format(str(time.strftime("%Y%m%d-%H:%M:%S - ", time.localtime()))+cls.class_path, str(e)))
+            self.ulogger.log_this("{} -> warning -> {}\n".format(str(time.strftime("%Y%m%d-%H:%M:%S - ", time.localtime()))+self.class_path, str(e)))
 
     def info(self, message):
         """This method is used to create a log for info type.
@@ -34,7 +34,7 @@ class Logger:
             self.logger.info(message)
         except Exception as e:
             # Manual logger for logging
-            self.ulogger.log_this("{} -> info -> {}\n".format(str(time.strftime("%Y%m%d-%H:%M:%S - ", time.localtime()))+cls.class_path, str(e)))
+            self.ulogger.log_this("{} -> info -> {}\n".format(str(time.strftime("%Y%m%d-%H:%M:%S - ", time.localtime()))+self.class_path, str(e)))
 
     def error(self, message):
         """This method is used to create a log for error type.
@@ -44,5 +44,5 @@ class Logger:
             self.logger.error(message)
         except Exception as e:
             # Manual logger for logging
-            self.ulogger.log_this("{} -> error -> {}\n".format(str(time.strftime("%Y%m%d-%H:%M:%S - ", time.localtime()))+cls.class_path, str(e)))
+            self.ulogger.log_this("{} -> error -> {}\n".format(str(time.strftime("%Y%m%d-%H:%M:%S - ", time.localtime()))+self.class_path, str(e)))
 

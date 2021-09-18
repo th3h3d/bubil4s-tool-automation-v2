@@ -3,6 +3,7 @@ from utilities.read_configs import ReadConfig
 from utilities.os_operations import OSOperations
 import pytest
 
+
 @pytest.mark.recon
 @pytest.mark.reversewhois
 @pytest.mark.amass_test_intel_whois

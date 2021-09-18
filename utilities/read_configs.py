@@ -16,7 +16,7 @@ class ReadConfig:
             return config.get(section, value)
         except Exception as e:
             # Manual logger for logging
-            cls.ulogger.log_this("{} -> get_config -> {}\n".format(str(time.strftime("%Y%m%d-%H:%M:%S - ", time.localtime()))+cls.class_path, str(e)))
+            ("{} -> get_config -> {}\n".format(str(time.strftime("%Y%m%d-%H:%M:%S - ", time.localtime()))+cls.class_path, str(e)))
 
     @classmethod
     def get_all_settings(cls):
